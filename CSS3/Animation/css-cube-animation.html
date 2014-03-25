@@ -9,7 +9,7 @@
 			.container {
 				width: 200px;
 				margin: auto;
-				margin-top: 200px;
+				margin-top: 400px;
 				perspective: 600px;
 				-webkit-perspective: 600px;
 				perspective-origin: 100px 100px;
@@ -18,31 +18,146 @@
 				-webkit-transform-style: preserve-3d;
 				transition-duration: 2s;
 				-webkit-transition-duration: 2s;
+            
 			}
 
 			.container:active {
-				transform: rotate3d(0, 0, 1, 180deg);
-				-webkit-transform: rotate3d(0, 0, 1, 180deg);
+				transform: rotate3d(1, -1, -0.5, 180deg);
+				-webkit-transform: rotate3d(1, -1, -0.5, 180deg);
 			}
+            
 
-			.cube, .cube2, .cube3, .cube4, .cube5 {
-				position: relative;
+
+			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover, .cube6:hover, .cube7:hover, .cube8:hover, .cube9:hover{
+				transform: translate3d(100px, 100px, 100px);
+				-webkit-transform: translate3d(100px, 100px, 100px);
+			}
+            
+            .cube {
+                animation: spina 30s;
+                -webkit-animation: spina 30s;
+                position: relative;
 				width: 200px;
-				opacity: 0.7;
+				opacity: 0.25;
 				transform-style: preserve-3d;
 				-webkit-transform-style: preserve-3d;
-				animation: spin 4s;
-				-webkit-animation: spin 4s;
-				animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
 				-webkit-animation-iteration-count: infinite;
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
-			}
-
-			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
-				animation-play-state: paused;
-				-webkit-animation-play-state: paused;
-			}
+            }
+            
+            .cube2 {
+                animation: spinb 31s;
+                -webkit-animation: spinb 31s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube3 {
+                animation: spinc 32s;
+                -webkit-animation: spinc 32s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube4 {
+                animation: spind 33s;
+                -webkit-animation: spind 33s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube5 {
+                animation: spine 34s;
+                -webkit-animation: spine 34s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube6 {
+                animation: spinf 35s;
+                -webkit-animation: spinf 35s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube7 {
+                animation: sping 36s;
+                -webkit-animation: sping 36s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube8 {
+                animation: spinh 37s;
+                -webkit-animation: spina 37s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
+            
+            .cube9 {
+                animation: spini 38s;
+                -webkit-animation: spinb 38s;
+                position: relative;
+				width: 200px;
+				opacity: 0.25;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+                animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+            }
 
 			.cube div {
 				position: absolute;
@@ -52,50 +167,137 @@
 
 			.cube2 div {
 				position: absolute;
-				top: -250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube3 div {
 				position: absolute;
-				top: 250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube4 div {
 				position: absolute;
-				left: 250px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube5 div {
 				position: absolute;
-				left: -250px;
 				width: 200px;
 				height: 200px;
 			}
+            
+            .cube6 div {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+			}
+            
+            .cube7 div {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+			}
+            
+            .cube8 div {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+			}
+            
+            .cube9 div {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+			}
+            
 
-			@keyframes spin {
-				from {transform: rotateY(0deg);}
-				to {transform: rotateY(360deg);}
+			@keyframes spina {
+				from {transform: rotateY(0deg); transform-origin: 50% 50%}
+				to {transform: rotateY(360deg); transform-origin: 50% 50%}
 			}
 
-			@-webkit-keyframes spin {
-				from {-webkit-transform: rotateY(0deg);}
-				to {-webkit-transform: rotateY(360deg);}
+			@-webkit-keyframes spina {
+				from {-webkit-transform: rotateY(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateY(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes spinb {
+				from {transform: rotateX(0deg); transform-origin: 50% 50%}
+				to {transform: rotateX(360deg); transform-origin: 50% 50%}
 			}
 
+			@-webkit-keyframes spinb {
+				from {-webkit-transform: rotateX(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateX(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes spinc {
+				from {transform: rotateZ(0deg); transform-origin: 50% 50%}
+				to {transform: rotateZ(360deg); transform-origin: 50% 50%}
+			}
+
+			@-webkit-keyframes spinc {
+				from {-webkit-transform: rotateZ(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateZ(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes spind {
+				from {transform: rotateX(0deg) rotateY(0deg); transform-origin: 50% 50%}
+				to {transform: rotateX(360deg) rotateY(360deg); transform-origin: 50% 50%}
+			}
+
+			@-webkit-keyframes spind {
+				from {-webkit-transform: rotateX(0deg) rotateY(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateX(360deg) rotateY(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes spine {
+				from {transform: rotateX(0deg) rotateZ(0deg); transform-origin: 50% 50%}
+				to {transform: rotateX(360deg) rotateZ(360deg); transform-origin: 50% 50%}
+			}
+            
+            @-webkit-keyframes spine {
+				from {-webkit-transform: rotateX(0deg) rotateZ(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateX(360deg) rotateZ(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes spinf {
+				from {transform: rotateY(0deg) rotateZ(0deg); transform-origin: 50% 50%}
+				to {transform: rotateY(360deg) rotateZ(360deg); transform-origin: 50% 50%}
+			}
+            
+            @-webkit-keyframes spinf {
+				from {-webkit-transform: rotateY(0deg) rotateZ(0deg);  -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateY(360deg) rotateZ(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            @keyframes sping {
+				from {transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); transform-origin: 50% 50%}
+				to {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); transform-origin: 50% 50%}
+			}
+            
+            @-webkit-keyframes sping {
+				from {-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); -webkit-transform-origin: 50% 50%}
+				to {-webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); -webkit-transform-origin: 50% 50%}
+			}
+            
+            .cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover, .cube6:hover, .cube7:hover, .cube8:hover, .cube9:hover{
+				transform: translateX(500px);
+				-webkit-transform: translateX(500px);
+			}
+            
+            
 			.back {
-				background-color: red;
+				background-color: cyan;
 				transform: translateZ(-100px) rotateY(180deg);
 				-webkit-transform: translateZ(-100px) rotateY(180deg);
 			}
 
 			.right {
-				background-color: orange;
+				background-color: magenta;
 				transform: rotateY(-270deg) translateX(100px);
 				-webkit-transform: rotateY(-270deg) translateX(100px);
 				transform-origin: top right;
@@ -103,7 +305,7 @@
 			}
 
 			.left {
-				background-color: yellow;
+				background-color: pink;
 				transform: rotateY(270deg) translateX(-100px);
 				-webkit-transform: rotateY(270deg) translateX(-100px);
 				transform-origin: center left;
@@ -111,7 +313,7 @@
 			}
 
 			.top {
-				background-color: green;
+				background-color: teal;
 				transform: rotateX(-90deg) translateY(-100px);
 				-webkit-transform: rotateX(-90deg) translateY(-100px);
 				transform-origin: top center;
@@ -119,7 +321,7 @@
 			}
 
 			.bottom {
-				background-color: blue;
+				background-color: crimson;
 				transform: rotateX(90deg) translateY(100px);
 				-webkit-transform: rotateX(90deg) translateY(100px);
 				transform-origin: bottom center;
@@ -127,7 +329,7 @@
 			}
 
 			.front {
-				background-color: purple;
+				background-color: gold;
 				transform: translateZ(100px);
 				-webkit-transform: translateZ(100px);
 			}
@@ -173,6 +375,42 @@
 			</div>
 
 			<div class="cube5">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+            
+            <div class="cube6">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+            
+            <div class="cube7">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+            
+            <div class="cube8">
+				<div class="front"></div>
+				<div class="back"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+            
+            <div class="cube9">
 				<div class="front"></div>
 				<div class="back"></div>
 				<div class="top"></div>
